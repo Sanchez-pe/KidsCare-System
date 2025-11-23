@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>KidsCare clinic - Agendamentos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Barra de navegação superior -->
+    <header class="topbar">
+      <div class="topbar-inner">
+                <nav class="topbar-menu">
+          <a class="topbar-item active" href="index.html">
+            <span class="topbar-icon">
+              <img src="img/botao-de-inicio.png" alt="Logo" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Início</span>
+          </a>
+          <a class="topbar-item" href="agendamentos.html">
+            <span class="topbar-icon">
+              <img src="img/calendar.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Agenda</span>
+          </a>
+          <a class="topbar-item" href="inicio-clinica.html">
+            <span class="topbar-icon">
+              <img src="img/info.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Sobre</span>
+          </a>
+          <a class="topbar-item" href="login-paciente.html">
+            <span class="topbar-icon">
+              <img src="img/user.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Perfil</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Logo -->
+      <section class="logo-row">
+        <div class="logo-wrapper">
+          <div class="logo-mark">
+            <span class="circle circle-left"></span>
+            <span class="circle circle-right"></span>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">KidsCare clinic</span>
+            <span class="logo-subtitle">Centro de Neurodiversidade</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Título da página -->
+      <section class="page-title-row">
+        <h1 class="page-title">Agendamentos</h1>
+      </section>
+
+      <!-- Card principal de agendamentos -->
+      <section class="appointments-wrapper">
+        <div class="appointments-card">
+          <div class="appointments-grid">
+            <!-- Coluna: Novo agendamento -->
+            <div class="booking-column">
+              <h2 class="card-section-title">Novo agendamento</h2>
+
+              <div class="form-group">
+                <label for="especialidade" class="form-label">Especialidade</label>
+                <input
+                  id="especialidade"
+                  name="especialidade"
+                  type="text"
+                  class="form-control"
+                  placeholder="Terapia ocupacional" />
+              </div>
+
+              <div class="form-group">
+                <label for="dia" class="form-label">Dia</label>
+                <input
+                  id="dia"
+                  name="dia"
+                  type="text"
+                  class="form-control"
+                  placeholder="DD/MM/AAAA" />
+              </div>
+
+              <div class="form-group">
+                <label for="profissional" class="form-label">Profissional</label>
+                <input
+                  id="profissional"
+                  name="profissional"
+                  type="text"
+                  class="form-control"
+                  placeholder="Escolha após selecionar o dia" />
+              </div>
+
+              <div class="appointments-spacer"></div>
+
+              <button type="button" class="btn btn-ghost btn-block">
+                Ver médicos disponíveis
+              </button>
+
+              <div class="appointments-spacer"></div>
+
+              <button type="button" class="btn btn-primary btn-block">
+                Confirmar agendamento
+              </button>
+            </div>
+
+            <!-- Coluna: Médicos disponíveis -->
+            <div class="doctors-column">
+              <h2 class="card-section-title">Médicos disponíveis</h2>
+
+              <div class="doctor-list">
+                <article class="doctor-item">
+                  <div class="doctor-avatar"></div>
+                  <div class="doctor-info">
+                    <div class="doctor-name">Dr(a). Exemplo 1</div>
+                    <div class="doctor-meta">Especialidade • 30 min</div>
+                  </div>
+                  <button type="button" class="btn btn-primary doctor-select-btn">
+                    Selecionar
+                  </button>
+                </article>
+
+                <article class="doctor-item">
+                  <div class="doctor-avatar"></div>
+                  <div class="doctor-info">
+                    <div class="doctor-name">Dr(a). Exemplo 2</div>
+                    <div class="doctor-meta">Especialidade • 30 min</div>
+                  </div>
+                  <button type="button" class="btn btn-primary doctor-select-btn">
+                    Selecionar
+                  </button>
+                </article>
+
+                <article class="doctor-item">
+                  <div class="doctor-avatar"></div>
+                  <div class="doctor-info">
+                    <div class="doctor-name">Dr(a). Exemplo 3</div>
+                    <div class="doctor-meta">Especialidade • 30 min</div>
+                  </div>
+                  <button type="button" class="btn btn-primary doctor-select-btn">
+                    Selecionar
+                  </button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>KidsCare clinic - Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Barra de navegação superior -->
+    <header class="topbar">
+      <div class="topbar-inner">
+                <nav class="topbar-menu">
+          <a class="topbar-item active" href="index.html">
+            <span class="topbar-icon">
+              <img src="img/botao-de-inicio.png" alt="Logo" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Início</span>
+          </a>
+          <a class="topbar-item" href="agendamentos.html">
+            <span class="topbar-icon">
+              <img src="img/calendar.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Agenda</span>
+          </a>
+          <a class="topbar-item" href="inicio-clinica.html">
+            <span class="topbar-icon">
+              <img src="img/info.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Sobre</span>
+          </a>
+          <a class="topbar-item" href="login-paciente.html">
+            <span class="topbar-icon">
+              <img src="img/user.png" style="width: 24px; height: 24px;">
+            </span>
+            <span class="topbar-label">Perfil</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Logo -->
+      <section class="logo-row">
+        <div class="logo-wrapper">
+          <div class="logo-mark">
+            <span class="circle circle-left"></span>
+            <span class="circle circle-right"></span>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">KidsCare clinic</span>
+            <span class="logo-subtitle">Centro de Neurodiversidade</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Título da página -->
+      <section class="page-title-row">
+        <h1 class="page-title">Cadastro</h1>
+      </section>
+
+      <!-- Card de cadastro -->
+      <section class="signup-wrapper">
+        <div class="signup-card">
+          <div class="signup-card-header">
+            <h2 class="signup-card-title">Crie sua conta</h2>
+          </div>
+
+          <form action="login-paciente.html" method="get">
+            <div class="signup-grid">
+              <div class="form-group">
+                <label for="nomeCompleto" class="form-label">Nome completo</label>
+                <input
+                  id="nomeCompleto"
+                  name="nomeCompleto"
+                  type="text"
+                  class="form-control"
+                  placeholder="Ex.: Maria dos Santos" />
+              </div>
+
+              <div class="form-group">
+                <label for="cpf" class="form-label">CPF (opcional)</label>
+                <input
+                  id="cpf"
+                  name="cpf"
+                  type="text"
+                  class="form-control"
+                  placeholder="000.000.000-00" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="maria@email.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="senha" class="form-label">Senha</label>
+                <input
+                  id="senha"
+                  name="senha"
+                  type="password"
+                  class="form-control"
+                  placeholder="mín. 8 caracteres" />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input
+                  id="telefone"
+                  name="telefone"
+                  type="tel"
+                  class="form-control"
+                  placeholder="(11) 99999-9999" />
+              </div>
+
+              <div class="form-group">
+                <label for="confirmarSenha" class="form-label">Confirmar senha</label>
+                <input
+                  id="confirmarSenha"
+                  name="confirmarSenha"
+                  type="password"
+                  class="form-control"
+                  placeholder="repita a senha" />
+              </div>
+            </div>
+
+            <div class="signup-actions">
+              <button type="submit" class="btn btn-primary">
+                Criar conta
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
